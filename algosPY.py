@@ -61,4 +61,33 @@ print(estudiantes, 'ESTUDIANTES ACTUAL')
 estudiantes[0]['last_name'] = "Bryant"
 print(estudiantes, 'ESTUDIANTES ACTUALIZADO')
 
+#Cambia el valor 20 en z a 30.
+
+print(len(z))
+z[0]['y'] = 30
+print(z)
+print(len(z[0]))
+
+
+# En el directorio_deportes, cambia "Messi" por "Andrés".
+'''
+print(directorio_deportes['fútbol'][0])
+directorio_deportes['fútbol'][0] = "Andrés"
+print(directorio_deportes)
+'''
+
+def cambiarNombre(diccionario):
+    for nombre in diccionario:
+        for i in diccionario[nombre]:
+            #print(i, "ES MESSI")
+            if i == "Messi" :
+                indiceMessi = diccionario[nombre].index('Messi')
+                print(indiceMessi , "INDICE MESSI?")
+                diccionario[nombre][indiceMessi] = "Andrés"
+
+    return diccionario
+
+print(directorio_deportes, "LISTA DEPORTES INICIAL" )
+print(cambiarNombre(directorio_deportes), "RESULTADO DE CAMBIAR NOMBRE")    
+
 #REVISAR ALGORITMOS
