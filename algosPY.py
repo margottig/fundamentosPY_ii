@@ -30,8 +30,35 @@ def numeroPrimo(numero):
         #    arreglo.append(i)
     #return arreglo
 
-print(numeroPrimo(13))
+#print(numeroPrimo(13))
 
 
+
+
+x = [ [5,2,3], [10,8,9] ] 
+
+estudiantes = [
+    {'first_name':  'Michael', 'last_name' : 'Jordan'},
+    {'first_name' : 'John', 'last_name' : 'Rosales'}
+]
+directorio_deportes = {
+    'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
+    'fútbol' : ['Messi', 'Ronaldo', 'Rooney']
+}
+z = [ {'x': 10, 'y': 20} ]
+
+
+# Camia el valor 10 en x a 15
+valorCambio = x[1][0]
+print(valorCambio, "ESTE VALOR DEBO CAMBIAR")
+print(x, "LISTA X INICIAL")
+x[1][0] = 15
+print(x, 'LISTA X ACTUALIZADA')
+
+#Cambia el "apellido” del primer alumno de 'Jordan' a 'Bryant'.
+print(estudiantes[0]['last_name'])
+print(estudiantes, 'ESTUDIANTES ACTUAL')
+estudiantes[0]['last_name'] = "Bryant"
+print(estudiantes, 'ESTUDIANTES ACTUALIZADO')
 
 
